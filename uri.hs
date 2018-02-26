@@ -27,3 +27,12 @@ av2 (x,y) = ((x*3.5) + (y*7.5))/11
 -- 1006 - Average 2
 av3 :: (Float, Float, Float) -> Float 
 av3 (x,y,z) = ((x*2) + (y*3) + (z*5))/10
+
+-- 1007 - Difference (between 4 numbers)
+dif :: (Integer, Integer, Integer, Integer) -> Integer
+dif (x,y,z,w) = (x*y - z*w)
+
+-- 1008 - Salary
+salary :: (Integer, Integer, Float) -> (Integer, Float)
+salary (x,y,z) = (x, a*z)
+	where a = fromInteger y :: Float
