@@ -36,3 +36,15 @@ dif (x,y,z,w) = (x*y - z*w)
 salary :: (Integer, Integer, Float) -> (Integer, Float)
 salary (x,y,z) = (x, a*z)
 	where a = fromInteger y :: Float
+
+-- 1009 Salary with Bonus
+salaryBonus :: ([Char], Float, Float) -> ([Char], Float)
+salaryBonus (x, y, z) = ("TOTAL: " , y + ( z * 0.15 ))
+
+-- 1010 - Simple Calculate
+simCal :: (Integer, Integer, Float) -> (Integer, Integer, Float) -> Float
+simCal (x,y,z)(a,b,c) = w*z + d*c
+	where w = fromInteger y :: Float
+	      d = fromInteger b :: Float
+
+
