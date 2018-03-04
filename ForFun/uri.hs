@@ -47,4 +47,3 @@ simCal (x,y,z)(a,b,c) = w*z + d*c
 	where w = fromInteger y :: Float
 	      d = fromInteger b :: Float
 
-
