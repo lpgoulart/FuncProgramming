@@ -26,3 +26,18 @@ elementAt (x:_) 1 = x
 elementAt (_:xs) y
 	| y < 1 = undefined
 	| otherwise = elementAt xs (y-1)
+
+-- Problem 4
+-- (*) Find the number of elements of a list. 
+myLength :: [a] -> Integer
+myLength x = sum [1 | _ <- x]
+
+-- Problem 5
+-- (*) Reverse a list. 
+myReverse :: [a] -> [a]
+myReverse [] = []
+myReverse (x:xs) = reverse xs ++ [x]
+
+-- Problem 6
+-- (*) Find out whether a list is a palindrome. A palindrome can be read forward or backward; e.g. (x a m a x). 
+--isPalindrom :: [a] -> Bool
